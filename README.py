@@ -19,4 +19,11 @@ wgsi 방식으로 전환
 3. root - folder 생성
     - package : __init__.py (o)
     - directory : __init__.py (x)
+
+rnn
+lstm
+
+앞의 결과가 뒤에 영향줌
+-> 조건부 확률 (bayesian)
 """
+
