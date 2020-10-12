@@ -30,14 +30,13 @@ class Training:
     def run(self, epochs=3, batch_size=32):
         data = self.data
         model = self.model
-        print('Traing state')
+        print('Training state')
         model.fit(
             data.x_train,
             data.y_train,
             batch_size=batch_size,
             epochs=epochs,
-            validation_data=(data.x_test,
-                             data.y_test),
+            validation_data=(data.x_test, data.y_test),
             verbose=2)
         loss, acc = model.evaluate(
             data.x_test,
